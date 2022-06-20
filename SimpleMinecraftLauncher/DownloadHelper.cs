@@ -55,7 +55,7 @@ namespace SimpleMinecraftLauncher
 
                 downloader.DownloadProgressChanged += (sender, e) =>
                 {
-                    Console.WriteLine($"Progress: {e.ProgressPercentage}%");
+                    Console.WriteLine($"Progress: {e.ProgressPercentage}:n0%");
                 };
             }
             downloader.DownloadFileCompleted += (sender, e) =>
