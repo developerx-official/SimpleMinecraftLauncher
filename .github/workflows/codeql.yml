@@ -72,7 +72,7 @@ jobs:
     
     - run: |
         echo "Run, Build Application using script"
-        dotnet build
+        dotnet build -f net6.0-windows
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
